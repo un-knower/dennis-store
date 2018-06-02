@@ -1,0 +1,218 @@
+17:20:32.495 transboot [restartedMain] INFO  com.data.trans.Application - Starting Application on Ellie-MacBook-Pro.local with PID 31847 (/Users/ellie-admin/dnc/eclipse-workspace/transboot/target/classes started by ellie.huang in /Users/ellie-admin/dnc/eclipse-workspace/transboot)
+17:20:32.497 transboot [restartedMain] INFO  com.data.trans.Application - The following profiles are active: dev
+17:20:32.552 transboot [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f196f21: startup date [Sat Jun 02 17:20:32 CST 2018]; root of context hierarchy
+17:20:33.030 transboot [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f196f21: startup date [Sat Jun 02 17:20:32 CST 2018]; root of context hierarchy
+17:25:29.186 transboot [restartedMain] INFO  com.data.trans.Application - Starting Application on Ellie-MacBook-Pro.local with PID 31857 (/Users/ellie-admin/dnc/eclipse-workspace/transboot/target/classes started by ellie.huang in /Users/ellie-admin/dnc/eclipse-workspace/transboot)
+17:25:29.188 transboot [restartedMain] INFO  com.data.trans.Application - The following profiles are active: dev
+17:25:29.231 transboot [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7f196f21: startup date [Sat Jun 02 17:25:29 CST 2018]; root of context hierarchy
+17:25:29.777 transboot [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:25:30.527 transboot [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+17:25:30.541 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:25:30.541 transboot [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+17:25:30.780 transboot [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:25:30.785 transboot [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:25:30.786 transboot [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1555 ms
+17:25:30.965 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:25:30.966 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:25:30.966 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:25:30.966 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:25:30.966 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'AAFilter' to urls: [*.jsp]
+17:25:30.967 transboot [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+17:25:36.229 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:25:36.260 transboot [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+17:28:03.457 transboot [restartedMain] INFO  com.data.trans.Application - Starting Application on Ellie-MacBook-Pro.local with PID 31862 (/Users/ellie-admin/dnc/eclipse-workspace/transboot/target/classes started by ellie.huang in /Users/ellie-admin/dnc/eclipse-workspace/transboot)
+17:28:03.460 transboot [restartedMain] INFO  com.data.trans.Application - The following profiles are active: dev
+17:28:03.516 transboot [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53a76b4a: startup date [Sat Jun 02 17:28:03 CST 2018]; root of context hierarchy
+17:28:04.068 transboot [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:28:04.848 transboot [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+17:28:04.859 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:28:04.860 transboot [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+17:28:05.100 transboot [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:28:05.106 transboot [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:28:05.106 transboot [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1591 ms
+17:28:05.262 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:28:05.262 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:28:05.262 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:28:05.263 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:28:05.263 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'AAFilter' to urls: [*.jsp]
+17:28:05.263 transboot [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+17:28:10.521 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:28:10.550 transboot [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+17:30:49.226 transboot [restartedMain] INFO  com.data.trans.Application - Starting Application on Ellie-MacBook-Pro.local with PID 31868 (/Users/ellie-admin/dnc/eclipse-workspace/transboot/target/classes started by ellie.huang in /Users/ellie-admin/dnc/eclipse-workspace/transboot)
+17:30:49.228 transboot [restartedMain] INFO  com.data.trans.Application - The following profiles are active: dev
+17:30:49.271 transboot [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53a76b4a: startup date [Sat Jun 02 17:30:49 CST 2018]; root of context hierarchy
+17:30:49.797 transboot [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:30:50.552 transboot [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+17:30:50.563 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:30:50.564 transboot [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+17:30:50.821 transboot [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:30:50.825 transboot [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:30:50.826 transboot [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1555 ms
+17:30:50.967 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:30:50.967 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:30:50.967 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:30:50.967 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:30:50.968 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'AAFilter' to urls: [*.jsp]
+17:30:50.968 transboot [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+17:30:56.236 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:30:56.265 transboot [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+17:34:03.508 transboot [restartedMain] INFO  com.data.trans.Application - Starting Application on Ellie-MacBook-Pro.local with PID 31873 (/Users/ellie-admin/dnc/eclipse-workspace/transboot/target/classes started by ellie.huang in /Users/ellie-admin/dnc/eclipse-workspace/transboot)
+17:34:03.509 transboot [restartedMain] INFO  com.data.trans.Application - The following profiles are active: dev
+17:34:03.564 transboot [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3ba53206: startup date [Sat Jun 02 17:34:03 CST 2018]; root of context hierarchy
+17:34:04.106 transboot [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:34:04.902 transboot [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+17:34:04.912 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:34:04.913 transboot [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+17:34:05.145 transboot [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:34:05.150 transboot [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:34:05.151 transboot [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1587 ms
+17:34:05.302 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:34:05.302 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:34:05.303 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:34:05.303 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:34:05.303 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'AAFilter' to urls: [*.jsp]
+17:34:05.303 transboot [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+17:34:10.560 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:34:10.590 transboot [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+17:45:53.989 transboot [restartedMain] INFO  com.data.trans.Application - Starting Application on Ellie-MacBook-Pro.local with PID 31897 (/Users/ellie-admin/dnc/eclipse-workspace/transboot/target/classes started by ellie.huang in /Users/ellie-admin/dnc/eclipse-workspace/transboot)
+17:45:53.993 transboot [restartedMain] INFO  com.data.trans.Application - The following profiles are active: dev
+17:45:54.056 transboot [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@238f7301: startup date [Sat Jun 02 17:45:54 CST 2018]; root of context hierarchy
+17:45:54.639 transboot [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:45:55.515 transboot [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+17:45:55.527 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:45:55.528 transboot [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+17:45:55.786 transboot [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:45:55.792 transboot [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:45:55.792 transboot [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1736 ms
+17:45:55.981 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:45:55.982 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:45:55.982 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:45:55.983 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:45:55.983 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'AAFilter' to urls: [*.jsp]
+17:45:55.983 transboot [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+17:46:01.286 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:46:01.327 transboot [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+17:52:19.554 transboot [restartedMain] INFO  com.data.trans.Application - Starting Application on Ellie-MacBook-Pro.local with PID 31917 (/Users/ellie-admin/dnc/eclipse-workspace/transboot/target/classes started by ellie.huang in /Users/ellie-admin/dnc/eclipse-workspace/transboot)
+17:52:19.556 transboot [restartedMain] INFO  com.data.trans.Application - The following profiles are active: dev
+17:52:19.621 transboot [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f715740: startup date [Sat Jun 02 17:52:19 CST 2018]; root of context hierarchy
+17:52:20.233 transboot [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:52:21.120 transboot [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+17:52:21.132 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:52:21.133 transboot [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+17:52:21.396 transboot [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:52:21.402 transboot [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:52:21.403 transboot [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1782 ms
+17:52:21.570 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:52:21.571 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:52:21.571 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:52:21.571 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:52:21.572 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'AAFilter' to urls: [*.jsp]
+17:52:21.572 transboot [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+17:52:26.868 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+17:52:26.902 transboot [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+17:57:27.398 transboot [restartedMain] INFO  com.data.trans.Application - Starting Application on Ellie-MacBook-Pro.local with PID 31933 (/Users/ellie-admin/dnc/eclipse-workspace/transboot/target/classes started by ellie.huang in /Users/ellie-admin/dnc/eclipse-workspace/transboot)
+17:57:27.399 transboot [restartedMain] INFO  com.data.trans.Application - The following profiles are active: dev
+17:57:27.453 transboot [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c805728: startup date [Sat Jun 02 17:57:27 CST 2018]; root of context hierarchy
+17:57:27.987 transboot [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+17:57:28.774 transboot [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+17:57:28.786 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:57:28.787 transboot [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+17:57:29.021 transboot [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+17:57:29.026 transboot [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:57:29.027 transboot [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1574 ms
+17:57:29.177 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+17:57:29.178 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+17:57:29.178 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+17:57:29.178 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+17:57:29.178 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'AAFilter' to urls: [*.jsp]
+17:57:29.178 transboot [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+17:57:34.676 transboot [restartedMain] INFO  com.data.trans.config.ElasticConfig - begin init espool...
+17:57:53.167 transboot [restartedMain] INFO  com.data.trans.config.ElasticConfig - init espool completed
+17:57:53.457 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c805728: startup date [Sat Jun 02 17:57:27 CST 2018]; root of context hierarchy
+17:57:53.527 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/main]}" onto public java.lang.String com.data.trans.controller.UserController.main(java.util.Map<java.lang.String, java.lang.Object>,com.data.trans.model.SystemUser)
+17:57:53.528 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list]}" onto public java.lang.String com.data.trans.controller.UserController.userList(java.util.Map<java.lang.String, java.lang.Object>,com.data.trans.model.SystemUser)
+17:57:53.529 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index]}" onto public java.lang.String com.data.trans.controller.UserController.login(java.util.Map<java.lang.String, java.lang.Object>,com.data.trans.model.SystemUser,javax.servlet.http.HttpServletRequest)
+17:57:53.529 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/edit]}" onto public java.lang.String com.data.trans.controller.UserController.userEdit(java.util.Map<java.lang.String, java.lang.Object>,com.data.trans.model.SystemUser)
+17:57:53.529 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save]}" onto public com.data.trans.common.ApiResponse<java.lang.String> com.data.trans.controller.UserController.userSave(com.data.trans.model.SystemUser)
+17:57:53.530 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete]}" onto public com.data.trans.common.ApiResponse<java.lang.String> com.data.trans.controller.UserController.userDelete(com.data.trans.model.SystemUser)
+17:57:53.530 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/validRepeat]}" onto public com.data.trans.common.ApiResponse<java.lang.String> com.data.trans.controller.UserController.repeat(com.data.trans.model.SystemUser)
+17:57:53.532 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+17:57:53.532 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+17:57:53.546 transboot [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+17:57:53.557 transboot [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:57:53.557 transboot [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:57:53.573 transboot [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+17:57:53.598 transboot [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+17:57:53.872 transboot [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+17:57:53.922 transboot [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+17:57:53.924 transboot [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+17:57:53.929 transboot [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+17:57:53.984 transboot [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+17:57:53.991 transboot [restartedMain] INFO  com.data.trans.Application - Started Application in 42.105 seconds (JVM running for 42.498)
+17:58:33.476 transboot [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+17:58:33.476 transboot [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+17:58:33.494 transboot [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+17:58:40.278 transboot [http-nio-8090-exec-7] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+18:02:31.633 transboot [Thread-11] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c805728: startup date [Sat Jun 02 17:57:27 CST 2018]; root of context hierarchy
+18:02:31.639 transboot [Thread-11] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+18:02:31.640 transboot [Thread-11] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+18:02:31.645 transboot [Thread-11] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+18:04:51.475 transboot [restartedMain] INFO  com.data.trans.Application - Starting Application on Ellie-MacBook-Pro.local with PID 31942 (/Users/ellie-admin/dnc/eclipse-workspace/seally-web/target/classes started by ellie.huang in /Users/ellie-admin/dnc/eclipse-workspace/seally-web)
+18:04:51.477 transboot [restartedMain] INFO  com.data.trans.Application - The following profiles are active: dev
+18:04:51.531 transboot [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c805728: startup date [Sat Jun 02 18:04:51 CST 2018]; root of context hierarchy
+18:04:52.055 transboot [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+18:04:52.836 transboot [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8090 (http)
+18:04:52.846 transboot [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:04:52.847 transboot [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.23
+18:04:53.086 transboot [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18:04:53.091 transboot [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:04:53.091 transboot [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1560 ms
+18:04:53.271 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+18:04:53.271 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+18:04:53.272 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+18:04:53.272 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+18:04:53.272 transboot [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean - Mapping filter: 'AAFilter' to urls: [*.jsp]
+18:04:53.272 transboot [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+18:04:58.734 transboot [restartedMain] INFO  com.data.trans.config.ElasticConfig - begin init espool...
+18:05:16.640 transboot [restartedMain] INFO  com.data.trans.config.ElasticConfig - init espool completed
+18:05:16.915 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c805728: startup date [Sat Jun 02 18:04:51 CST 2018]; root of context hierarchy
+18:05:16.977 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/main]}" onto public java.lang.String com.data.trans.controller.UserController.main(java.util.Map<java.lang.String, java.lang.Object>,com.data.trans.model.SystemUser)
+18:05:16.979 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/index]}" onto public java.lang.String com.data.trans.controller.UserController.login(java.util.Map<java.lang.String, java.lang.Object>,com.data.trans.model.SystemUser,javax.servlet.http.HttpServletRequest)
+18:05:16.979 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/list]}" onto public java.lang.String com.data.trans.controller.UserController.userList(java.util.Map<java.lang.String, java.lang.Object>,com.data.trans.model.SystemUser)
+18:05:16.980 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/edit]}" onto public java.lang.String com.data.trans.controller.UserController.userEdit(java.util.Map<java.lang.String, java.lang.Object>,com.data.trans.model.SystemUser)
+18:05:16.980 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/save]}" onto public com.data.trans.common.ApiResponse<java.lang.String> com.data.trans.controller.UserController.userSave(com.data.trans.model.SystemUser)
+18:05:16.981 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/delete]}" onto public com.data.trans.common.ApiResponse<java.lang.String> com.data.trans.controller.UserController.userDelete(com.data.trans.model.SystemUser)
+18:05:16.981 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/validRepeat]}" onto public com.data.trans.common.ApiResponse<java.lang.String> com.data.trans.controller.UserController.repeat(com.data.trans.model.SystemUser)
+18:05:16.984 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+18:05:16.984 transboot [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+18:05:16.997 transboot [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+18:05:17.008 transboot [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:05:17.009 transboot [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:05:17.025 transboot [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalExceptionHandler
+18:05:17.052 transboot [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+18:05:17.314 transboot [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+18:05:17.365 transboot [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+18:05:17.367 transboot [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+18:05:17.372 transboot [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+18:05:17.438 transboot [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8090 (http)
+18:05:17.445 transboot [restartedMain] INFO  com.data.trans.Application - Started Application in 41.501 seconds (JVM running for 41.913)
+18:06:02.880 transboot [http-nio-8090-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+18:06:02.881 transboot [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+18:06:02.898 transboot [http-nio-8090-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 17 ms
+18:06:09.453 transboot [http-nio-8090-exec-6] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+18:06:30.958 transboot [Thread-11] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1c805728: startup date [Sat Jun 02 18:04:51 CST 2018]; root of context hierarchy
+18:06:30.962 transboot [Thread-11] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+18:06:30.963 transboot [Thread-11] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+18:06:30.969 transboot [Thread-11] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
