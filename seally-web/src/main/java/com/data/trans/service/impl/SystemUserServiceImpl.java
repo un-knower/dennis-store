@@ -1,6 +1,10 @@
 package com.data.trans.service.impl;
 
+import static org.junit.Assert.assertNotNull;
+
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -137,5 +141,13 @@ public class SystemUserServiceImpl implements SystemUserService {
 			return ApiResponse.success();
 		}
 		return ApiResponse.error("此账号已被占用！");
+	}
+
+	@Override
+	public List<SystemUser> findListByUserIds(Set<String> userIds) {
+		if(null == userIds || userIds.isEmpty()) {
+			return new ArrayList<>();
+		}
+		return systemUserMapper.findListByUserIds(userIds);
 	}
 }

@@ -25,6 +25,8 @@ public class SystemUser extends PagerUtil<SystemUser> implements Serializable{
 	private String address;//住址
 	private String identity;//身份证号
 	
+	private String groupId;//业务组id，是具体业务需要而代表不同的意思
+	
 	public Integer getId() {
 		return id;
 	}
@@ -96,6 +98,12 @@ public class SystemUser extends PagerUtil<SystemUser> implements Serializable{
 	}
 	public void setIdentity(String identity) {
 		this.identity = identity;
+	}
+	public String getGroupId() {
+		return groupId;
+	}
+	public void setGroupId(String groupId) {
+		this.groupId = groupId;
 	}
 	
 }

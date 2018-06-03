@@ -16,6 +16,7 @@ import com.data.trans.exception.ViewException;
 import com.data.trans.model.SystemUser;
 import com.data.trans.service.SystemUserService;
 import com.data.trans.util.EncryptUtil;
+import com.seally.constant.WebConstant;
 
 @Controller
 @RequestMapping("user/")
@@ -27,7 +28,7 @@ public class UserController {
 	@Autowired
 	private SystemUserService systemUserService;
 	
-	@RequestMapping("index")
+	@RequestMapping("login")
 	public String login(Map<String,Object> map,SystemUser user,HttpServletRequest request){
 		/*ListOperations<String,Integer> listOpera = redisTemplate.opsForList();*/
 		//ValueOperations<String,Object> valueOpera = redisTemplate.opsForValue();
@@ -61,26 +62,13 @@ public class UserController {
 		}
 		//登陆成功
 		if(loginUser.getPassword().equals(EncryptUtil.Encrypt(user.getPassword(), true))){
-			request.getSession().setAttribute("loginUser",loginUser);
+			request.getSession().setAttribute(WebConstant.LOGIN_USER_KEY,loginUser);
+			
+			
+			
 			return "index";
 		}
 		throw new ViewException(ResponseEnum.PASS_UNMATCH,user.getAccount(),"login");
-	}
-	
-	@RequestMapping("main")
-	public String main(Map<String,Object> map,SystemUser user){
-		
-		/*ValueOperations<String,Object> valueOpera = redisTemplate.opsForValue();
-		
-		User loginUser = (User)valueOpera.get("user");
-		if(loginUser == null){
-			System.out.println("不存在，存储缓存："+user.getUserName());
-			valueOpera.set("user", user, 20, TimeUnit.SECONDS);
-		}else{
-			System.out.println("存在，存储获取到："+loginUser.getUserName());
-		}*/
-		
-		return "trans";
 	}
 	
 	
@@ -122,4 +110,6 @@ public class UserController {
 	public ApiResponse<String> repeat(SystemUser user){
 		return systemUserService.repeat(user);
 	}
+	
+	
 }

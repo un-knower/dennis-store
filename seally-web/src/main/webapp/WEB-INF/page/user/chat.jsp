@@ -1,87 +1,31 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
-<%@ include file="common.jsp"%>
+<%@ include file="../common.jsp"%>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<title>系统登录</title>
-<link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css" type="text/css"/>
+<title>聊天室</title>
 <style type="text/css">
-	body{margin: 0px;padding: 0px;}
-	
-	/* 菜单组件样式 */
-	#main-nav {border-left: 3px solid #9A9A9A;border-radius: 10px;overflow-y:scroll;height: 100%;}
-    #main-nav.nav-tabs.nav-stacked > li > a {
-        font-size: 12px;
-        font-weight: 600;
-        color: #4A515B;
-        background: #E9E9E9;
-        background: -moz-linear-gradient(top, #FAFAFA 0%, #E9E9E9 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FAFAFA), color-stop(100%,#E9E9E9));
-        background: -webkit-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
-        background: -o-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
-        background: -ms-linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
-        background: linear-gradient(top, #FAFAFA 0%,#E9E9E9 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9');
-        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#FAFAFA', endColorstr='#E9E9E9')";
-        border: 1px solid #D5D5D5;
-        border-radius: 4px;
-    }
-    #main-nav.nav-tabs.nav-stacked > li > a > span {color: #4A515B;}
-	#main-nav li i {margin-right:5px;}/* 菜单名称与图标间距 */
-    #main-nav.nav-tabs.nav-stacked > li.active > a, #main-nav.nav-tabs.nav-stacked > li > a:hover {
-        color: #FFF;
-        background: #3C4049;
-        background: -moz-linear-gradient(top, #4A515B 0%, #3C4049 100%);
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4A515B), color-stop(100%,#3C4049));
-        background: -webkit-linear-gradient(top, #4A515B 0%,#3C4049 100%);
-        background: -o-linear-gradient(top, #4A515B 0%,#3C4049 100%);
-        background: -ms-linear-gradient(top, #4A515B 0%,#3C4049 100%);
-        background: linear-gradient(top, #4A515B 0%,#3C4049 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049');
-        -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#4A515B', endColorstr='#3C4049')";
-        border-color: #2B2E33;
-    }
-    #main-nav.nav-tabs.nav-stacked > li.active > a, #main-nav.nav-tabs.nav-stacked > li > a:hover > span {color: #FFF;}
-    #main-nav.nav-tabs.nav-stacked > li {margin-bottom: 4px;}
-    
-    .navbar-brand{width: 160px;color: white;}
-	/*控制菜单箭头*/
-	.nav-header.collapsed > span.glyphicon-chevron-toggle:before {content: "\e114";}
-	.nav-header > span.glyphicon-chevron-toggle:before {content: "\e113";}
-	
-	/* 二级菜单 选中样式 */
-	.secondmenu a {font-size: 12px;color: #4A515B;text-align: left;}
-	.secondmenu li > a:hover {background-color: #4A515B;color: white;}
-	.secondmenu li i {margin-left:15px;}/* 二级菜单名称与图标向右偏移距离 */
-	
-	/* 导航（高53px）、菜单（宽160px）、与页面展示区3部分的响应式填充布局 */
-	header {height: 53px;width: 100%;z-index: 1000;}
-	footer > .footer-left{width: 160px;height: 100%;margin-left: -2px;z-index: 999;}
-	footer > .footer-right{padding-left: 160px;z-index: 998;}
-	footer > .footer-left,.footer-right{padding-top: 53px;}
-	footer > .footer-right,#content-iframe{height: 100%;width: 100%;}
-	header,footer > .footer-left,.footer-right{float: left;position:fixed;}
-	
-	/* 自定义滚动条样式 */
-	::-webkit-scrollbar{  
-	    width: 2px;  /*滚动条宽度*/
-	    height: 2px;  /*滚动条高度*/
-	}  
-	/*定义滚动条轨道 内阴影+圆角*/  
-	::-webkit-scrollbar-track{  
-	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
-	    border-radius: 3px;  /*滚动条的背景区域的圆角*/
-	    background-color: white;/*滚动条的背景颜色*/  
-	}  
-	/*定义滑块 内阴影+圆角*/  
-	::-webkit-scrollbar-thumb{  
-	    border-radius: 3px;  /*滚动条的圆角*/
-	    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
-	    background-color: #40454E;  /*滚动条的背景颜色*/
-	}  
+	*{margin: 0px;padding: 0px;background: #FFFFFF;}
+	#saccept{
+		display: inline-block;
+		width: 300px;
+		height:200px;
+		border:solid 1px gray;
+	}
+	.container-fluid{min-width: 900px}
+	.users{width: 400px;min-width: 400px;height:500px;position: absolute;right: 0px;border: solid 2px gray;border-radius: 10px;}
+	.messages{margin-right: 410px;height:100%;min-width: 500px;border: 2px solid gray;position: relative;border-radius: 10px;}
+	.messages ul li{list-style: none;margin: 6px 10px;}
+	.messages ul li.self{text-align: right;}
+	.messages ul li.time{text-align: center;}
+	.messages ul li .msg-header{display: inline-block;text-align: center;}
+	.messages ul li .msg-body{display: inline-block;vertical-align: top;max-width: 400px;}
+	.messages ul li .msg-body span{display: block;}
+	.messages ul li .msg-body .user-name{display: block;font-size: 14px;font-weight: bold;}
+	.messages ul li .msg-header img{border: 1px solid green; width: 40px;height: 40px;border-radius: 3px;background-color: pink;}
+	.messages ul li.self img{margin-left: 5px;}
+	.messages ul li.other img{margin-right: 5px;}
 
-}
-	
 </style>
 
 <script type="text/javascript">
@@ -89,134 +33,149 @@
 </script>
 </head>
 <body>
-<!-- 页头导航栏-begin -->
-<header>
-<nav class="navbar navbar-inverse" role="navigation">
-	<div class="navbar-header">
-		<a class="navbar-brand" href="#">WEB管理系统</a>
+<div class="container-fluid">
+	<div class="users">
+		<input id="msg" name="message" size="80">
+		<button id="sendBtn" onclick="sendMassage(10000);">发送</button>
+		<button id="sendBtn" onclick="connectServer();">重新连接</button>
 	</div>
-	<div class="collapse navbar-collapse">
-		<!-- 添加一个（默认左边）的当行条--begin -->
-		<ul class="nav navbar-nav">
-			<!-- 添加2普通a标签导航菜单项 -->
-			<li><a href="#">数据迁移</a></li>
-			<li><a href="#">任务查询</a></li>
-			
-			<!-- 添加1个可弹出下拉选项的a标签导航菜单项 -->
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown">历史记录<b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">菜单1</a></li>
-					<li><a href="#">菜单2</a></li>
-					<li class="divider"></li>
-					<li><a href="#">菜单3</a></li>
-					<li class="divider"></li>
-					<li><a href="#">菜单4</a></li>
-				</ul>
+	<div class="messages"> 
+		<ul>
+			<%-- <li class="msg other">
+				<div class="msg-header" style="display: inline-block;">
+					<img alt="" src="${pageContext.request.contextPath}/images/boy.jpg" >
+				</div>
+				<div class="msg-body">
+					<span class="user-name">张三</span>
+					<span class="content">消息内容</span>
+				</div>
 			</li>
+			<li class="msg time">2018-05-30 12:23:34</li>
+			<li class="msg self">
+				<div class="msg-body">
+					<span class="user-name">李四</span>
+					<span class="content">消息内容</span>
+				</div>
+				<div class="msg-header" style="display: inline-block;">
+					<img alt="" src="" >
+				</div>
+			</li> --%>
 		</ul>
-		<!-- 添加一个（默认左边）的当行条--end -->
-		<!-- 添加一个右边的当行条--begin -->
-		<ul class="nav navbar-nav navbar-right">
-			<li>
-				<form class="navbar-form navbar-left">
-			        <div class="form-group">
-			          <input type="text" class="form-control" placeholder="Search">
-			        </div>
-			        <button type="submit" class="btn btn-default">全局索引</button>
-		      	</form>
-			</li>
-			<li class="dropdown">
-				<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 更多设置 <b class="caret"></b></a>
-				<ul class="dropdown-menu">
-					<li><a href="#">账号资料</a></li>
-					<li><a href="#">密码修改</a></li>
-					<li class="divider"></li>
-					<li><a href="#">退出登陆</a></li>
-				</ul>
-			</li>
-		</ul>
-		<!-- 添加一个右边的当行条--end -->
 	</div>
-</nav>
-</header>
-<!-- 页头导航栏-end -->
-
-<footer>
-<!-- 页尾区域（左边菜单导航，右边页面主体）-begin -->
-<!-- 左侧菜单-begin -->
-<div class="footer-left" >
-   <ul id="main-nav" class="nav nav-tabs nav-stacked">
-        <li class="active">
-            <a target="content-iframe" href="#"><i class="glyphicon glyphicon-th-large"></i>首页</a>
-        </li>
-        <li>
-        	 <!-- 使用boostrap的data-target或是a标签特有的href设置一个id选择器如"#menu_1" 然后加上data-toggle="collapse" 接下来用一个ul块设定其id对应为之前的选择器，就可以达到点击展开折叠效果-->
-            <a href="#menu_1" class="nav-header collapsed" data-toggle="collapse"><i class="glyphicon glyphicon-cog"></i>系统管理
-                <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
-            </a>
-            <ul id="menu_1" class="nav nav-list collapse secondmenu">
-                <li><a target="content-iframe" href="${pageContext.request.contextPath}/user/list.action"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-asterisk"></i>角色管理</a></li>
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-th-list"></i>菜单管理</a></li>
-                <li><a target="content-iframe" href="${pageContext.request.contextPath}/user/joinChat.action"><i class="glyphicon glyphicon-edit"></i>员工沟通</a></li>
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-eye-open"></i>日志查看</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#menu_2" class="nav-header collapsed" data-toggle="collapse"><i class="glyphicon glyphicon-credit-card"></i>任务管理
-            	<span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
-            </a>
-            <ul id="menu_2" class="nav nav-list collapse secondmenu">
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-user"></i>新建任务</a></li>
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-th-list"></i>菜单管理</a></li>
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-asterisk"></i>角色管理</a></li>
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-edit"></i>修改密码</a></li>
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-eye-open"></i>日志查看</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="#menu_3" class="nav-header collapsed" data-toggle="collapse"><i class="glyphicon glyphicon-globe"></i>分发配置<span class="label label-info pull-center">5</span>
-            <span class="pull-right glyphicon glyphicon-chevron-toggle"></span>
-            </a>
-            <ul id="menu_3" class="nav nav-list collapse secondmenu">
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-th-list"></i>菜单管理</a></li>
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-asterisk"></i>角色管理</a></li>
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-edit"></i>修改密码</a></li>
-                <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-eye-open"></i>日志查看</a></li>
-            </ul>   
-        </li>
-        <li><a  href="http://www.baidu.com" class="nav-header collapsed" data-toggle="collapse"><i class="glyphicon glyphicon-calendar"></i>图表统计</a></li>
-        <li><a  href="#" class="nav-header collapsed" data-toggle="collapse"><i class="glyphicon glyphicon-fire"></i>关于系统</a></li>
-    </ul>
 </div>
-<!-- 左侧菜单-end -->
-<!-- 右侧工作区-begin -->
-<div class="footer-right" >
-	<iframe id="content-iframe" style="border: 0px;" name="content-iframe" src="#" ></iframe>
-</div>
-<!-- 右侧工作区-end-->
-</footer>
-<!-- 页尾区域（左边菜单导航，右边页面主体）-begin -->
-
 <!-- js脚本 -->
 <script type="text/javascript">
-$(function(){
-	/* $("#loginBtn").click(function(){
-		$.ajax({
-		   type: "POST",
-		   url: "login.ation",
-		   data: $("#loginForm").serialize(),
-		   success: function(data){
-		     	alert(data.code+" "+data.message);
-		   },
-		   err:function(data){
-			   alert("系统异常");
-		   }
-		});
-	}); */
+/* websocket相关开始 */
+ 
+var webSocket ={};
+var userId = "${loginedUser.userId }";
+var userName = "${loginedUser.name }";
+$(function() {
+    connectServer();
 });
+
+//连接服务端
+function connectServer(){
+	webSocket = new WebSocket("ws://localhost:8090/myMessageHandler")
+    webSocket.onopen = function () {
+	       //成功建立连接，获取在线好友列表
+	       sendMassage(10001);
+	       //ws.send("{}");
+    };
+    webSocket.onclose = function () { 
+        console.log("onclose");
+    };
+    webSocket.onmessage = function (event) {
+ 	   if(typeof event.data === String) {
+ 		    console.log("Received data string");
+ 		  }
+
+ 		  if(event.data instanceof ArrayBuffer){
+ 		    var buffer = event.data;
+ 		    console.log("Received arraybuffer");
+ 		  }
+ 	   receiveMassage(event.data);
+    }
+}
+
+
+/* websocket相关结束 */
+
+//发送消息
+function sendMassage(code){
+	var msg = $("#msg").val();
+	if(msg != ''){
+		webSocket.send(initMsg(userId,userName,['1F0D3E3761534DC68820ABD248D17BDA','83CD4275788D4B968915BB25243E1364'],[],1,code,msg));
+	}
+}
+
+//收到消息处理
+function receiveMassage(msg){
+	if(msg && /^{.*}$/.test(msg)){
+		//alert(msg);
+		var msgObj = JSON.parse(msg);
+		if(msgObj.code == 10001){//用户列表
+			
+		}else{//收到消息
+			if(msgObj.fromUser.userId == userId){
+				showSelfMsg(msgObj);
+			}else{
+				showOtherMsg(msgObj);
+			}
+		}
+	}
+	
+}
+
+//展示别人的消息
+function showOtherMsg(msgObj){
+	$(".messages ul").append(
+		   "<li class='msg time'>2018-05-30 12:23:34</li>\
+		    <li class='msg other'>\
+				<div class='msg-header'>\
+					<img alt='test' src='${pageContext.request.contextPath}/images/boy.jpg' >\
+				</div>\
+				<div class='msg-body'>\
+					<span class='user-name'>"+msgObj.fromUser.name+"</span>\
+					<span class='content'>"+msgObj.content+"</span>\
+				</div>\
+			</li>"
+	);
+	
+}
+
+//展示自己的消息
+function showSelfMsg(msgObj){
+	$(".messages ul").append(
+		   "<li class='msg time'>2018-05-30 12:23:34</li>\
+			<li class='msg self'>\
+				<div class='msg-body'>\
+					<span class='user-name'>"+msgObj.fromUser.name+"</span>\
+					<span class='content'>"+msgObj.content+"</span>\
+				</div>\
+				<div class='msg-header'>\
+					<img alt='img' src='${pageContext.request.contextPath}/images/girl.jpg' >\
+				</div>\
+			</li>"
+	);
+}
+
+function initMsg(userId,userName,toUserIds,toGroupIds,handType,code,msg){
+	var msg = {
+			"code":code,
+			"content":msg,
+			"fromUser":{
+				"name":userName,
+				"nick":userName,
+				"userId":userId
+			},
+			"handType":handType,
+			"toGroupIds":toGroupIds,
+			"toUserIds":toUserIds
+		}
+	return JSON.stringify(msg);
+}
+
 </script>
 </body>
 </html>

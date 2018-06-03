@@ -3,7 +3,7 @@
 server: 
     port: 8090 #端口
     session: 
-        timeout: 30 #session过期时间
+        timeout: 3000000 #session过期时间
 #    context-path: transboot #项目默认访问路径，默认为/   此项配置报错：
       
 #---------自定义日志配置文件的名称和位置

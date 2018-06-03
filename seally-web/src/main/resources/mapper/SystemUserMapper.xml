@@ -107,4 +107,12 @@
 		select count(1) from system_user <include refid="listUserSqlIf"/>
 	</select>
 	
+	<select id="findListByUserIds" resultMap="systemUserAll_map">
+		select * from system_user
+		where user_id in
+		<foreach item="item" index="index" collection="userIds" open="(" separator="," close=")">
+	        #{item}
+	    </foreach>
+	</select>
+	
 </mapper>
