@@ -159,7 +159,7 @@
                 <li><a target="content-iframe" href="${pageContext.request.contextPath}/user/list.action"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
                 <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-asterisk"></i>角色管理</a></li>
                 <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-th-list"></i>菜单管理</a></li>
-                <li><a target="content-iframe" href="${pageContext.request.contextPath}/user/joinChat.action"><i class="glyphicon glyphicon-edit"></i>员工沟通</a></li>
+                <li><a target="content-iframe" href="${pageContext.request.contextPath}/user/joinChat.action"><i class="glyphicon glyphicon-edit"></i>员工通讯</a></li>
                 <li><a target="content-iframe" href="#"><i class="glyphicon glyphicon-eye-open"></i>日志查看</a></li>
             </ul>
         </li>
