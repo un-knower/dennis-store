@@ -13,7 +13,7 @@
 		border:solid 1px gray;
 	}
 	.container-fluid{min-width: 900px}
-	.users{width: 400px;min-width: 400px;height:500px;position: absolute;right: 0px;border: solid 2px gray;border-radius: 10px;}
+	.users{width: 400px;min-width: 400px;height:100%;position: absolute;right: 0px;border: solid 2px gray;border-radius: 10px;}
 	.messages{margin-right: 410px;height:100%;min-width: 500px;border: 2px solid gray;position: relative;border-radius: 10px;}
 	.messages ul li{list-style: none;margin: 6px 10px;}
 	.messages ul li.self{text-align: right;}
@@ -25,7 +25,16 @@
 	.messages ul li .msg-header img{border: 1px solid green; width: 40px;height: 40px;border-radius: 3px;background-color: pink;}
 	.messages ul li.self img{margin-left: 5px;}
 	.messages ul li.other img{margin-right: 5px;}
-
+	.users .list-container{height: 300px;overflow: auto;}
+	.users .list-container ul li{margin: 10px 2px;border:1px solid red;}
+	.users .list-container ul li img.header{border: 1px solid green; width: 40px;height: 40px;border-radius: 3px;background-color: pink;}
+	.users .list-container ul li span.name{font-weight: bold;width: 50px;border:solid 1px gray; margin: 0px 10px;}
+	.users .list-container ul li span.ck{float: right;margin:10px 10px;}
+	.inline-black{display: inline-block;}
+	
+	.send-container{height:300px;width: 100%;position: absolute;right: 0px;bottom: 0px; border:1px solid green;overflow: auto;} 
+	.send-container .btn{width: 100%;}
+	.send-container .msginput{height:150px;width: 100%;}
 </style>
 
 <script type="text/javascript">
@@ -35,32 +44,33 @@
 <body>
 <div class="container-fluid">
 	<div class="users">
-		<input id="msg" name="message" size="80">
-		<button id="sendBtn" onclick="sendMassage(10000);">发送</button>
-		<button id="sendBtn" onclick="connectServer();">重新连接</button>
+		<div class="list-container">
+			<ul>
+				<!-- <li class="on" data-userId=''>
+					<img class="header" alt="" src="">
+					<span class="name inline-black" >张三</span>
+					<span class="status inline-black" >在线</span>
+					<span class="ck" style="float: right;"><input type="checkbox"></span>
+				</li>
+				<li class="on">
+					<img class="header" alt="" src="">
+					<span class="name inline-black" >李四</span>
+					<span class="status inline-black" >在线</span>
+					<span class="ck inline-black"><input type="checkbox"></span>
+				</li> -->
+			</ul>
+		</div>
+		
+		<div class="send-container">
+			<div class="to-user" style="border:1px solid red; width:100%;height:114px;">
+			 富文本区域
+		    </div>
+			<textarea class="msginput" rows="3" placeholder="请输入..."></textarea>
+			<input class="btn btn-primary send" type="submit" value="发送">
+		</div>
 	</div>
 	<div class="messages"> 
-		<ul>
-			<%-- <li class="msg other">
-				<div class="msg-header" style="display: inline-block;">
-					<img alt="" src="${pageContext.request.contextPath}/images/boy.jpg" >
-				</div>
-				<div class="msg-body">
-					<span class="user-name">张三</span>
-					<span class="content">消息内容</span>
-				</div>
-			</li>
-			<li class="msg time">2018-05-30 12:23:34</li>
-			<li class="msg self">
-				<div class="msg-body">
-					<span class="user-name">李四</span>
-					<span class="content">消息内容</span>
-				</div>
-				<div class="msg-header" style="display: inline-block;">
-					<img alt="" src="" >
-				</div>
-			</li> --%>
-		</ul>
+		<ul> </ul>
 	</div>
 </div>
 <!-- js脚本 -->
@@ -80,7 +90,6 @@ function connectServer(){
     webSocket.onopen = function () {
 	       //成功建立连接，获取在线好友列表
 	       sendMassage(10001);
-	       //ws.send("{}");
     };
     webSocket.onclose = function () { 
         console.log("onclose");
@@ -115,7 +124,18 @@ function receiveMassage(msg){
 		//alert(msg);
 		var msgObj = JSON.parse(msg);
 		if(msgObj.code == 10001){//用户列表
-			
+			$(".users .list-container ul").empty();
+			$.each(msgObj.result,function(i,user){
+				
+				$(".users .list-container ul").append(
+				   "<li class='on' id='li-"+user.userId+"' data-userId='"+user.userId+"'>\
+						<img class='header' alt='' src=''>\
+						<span class='name inline-black' >"+user.name+"</span>\
+						<span class='status inline-black' >在线</span>\
+						<span class='ck' style='float: right;'><input type='checkbox'></span>\
+					</li>"		
+				);
+			});
 		}else{//收到消息
 			if(msgObj.fromUser.userId == userId){
 				showSelfMsg(msgObj);

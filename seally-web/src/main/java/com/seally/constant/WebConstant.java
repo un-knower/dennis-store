@@ -31,7 +31,7 @@ public interface WebConstant {
 	/**客户端请求发送消息**/
 	Integer CODE_CLIENT_REQUEST_SENDMSG = 10000;
 	/**客户端请求获取在线好友列表**/
-	Integer  CODE_CLIENT_REQUEST_GETUSER_ONLINE = 10001;
+	Integer  CODE_CLIENT_REQUEST_GETUSER_ONLINE =10001;
 	
 	
 }
